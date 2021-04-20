@@ -1,0 +1,1 @@
+2021-04-20 01:37:42.493 INFO com.gladkaya.taskxml.builder.MedicinsDOMBuilder - File error or I/O error: java.io.FileNotFoundException: D:\epam\taskxml\data\medicins.xml (Системе не удается найти указанный путь)

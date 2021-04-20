@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicins>
+
+    <medicament id="A1" analog="Septoletto">
+        <name>Dr. Mom</name>
+        <pharm>Johnson and Johnson</pharm>
+        <country>India</country>
+        <age>teen</age>
+        <price>7</price>
+        <best-before>2023-04</best-before>
+        <version>tablet</version>
+        <amount>24</amount>
+    </medicament>
+
+    <medicament id="A2">
+        <name>Medicinal charcoal</name>
+        <pharm>Ekzon</pharm>
+        <country>Belarus</country>
+        <age>child</age>
+        <price>2</price>
+        <best-before>2022-05</best-before>
+        <version>tablet</version>
+        <amount>10</amount>
+    </medicament>
+
+    <medicament analog="Paracetamol" id="A3">
+        <name>Aspirin</name>
+        <pharm>Byer pharma</pharm>
+        <country>Germany</country>
+        <age>adult</age>
+        <price>3</price>
+        <best-before>2021-08</best-before>
+        <version>tablet</version>
+        <amount>20</amount>
+    </medicament>
+
+    <medicament id="A4">
+        <name>Spazmalgon</name>
+        <pharm>Dypniza</pharm>
+        <country>Bulgary</country>
+        <age>adult</age>
+        <price>6</price>
+        <best-before>2023-01</best-before>
+        <version>tablet</version>
+        <amount>10</amount>
+    </medicament>
+
+    <medicament id="A5">
+        <name>Ascorbic acid</name>
+        <pharm>Belmed</pharm>
+        <country>Belarus</country>
+        <age>child</age>
+        <price>1</price>
+        <best-before>2022-01</best-before>
+        <version>tablet</version>
+        <amount>10</amount>
+    </medicament>
+
+    <medicament id="A6">
+        <name>Nazivin</name>
+        <pharm>Pharmamed</pharm>
+        <country>Belgium</country>
+        <age>teen</age>
+        <price>17</price>
+        <best-before>2023-02</best-before>
+        <version>spray</version>
+        <amount>60</amount>
+    </medicament>
+
+    <medicament id="A7">
+        <name>Teraflu</name>
+        <pharm>SmitClain</pharm>
+        <country>Italy</country>
+        <age>adult</age>
+        <price>34</price>
+        <best-before>2023-02</best-before>
+        <version>powder</version>
+        <amount>200</amount>
+    </medicament>
+
+    <medicament id="A8">
+        <name>Madopar</name>
+        <pharm>CaoSan</pharm>
+        <country>Japan</country>
+        <age>middle-aged</age>
+        <price>30</price>
+        <best-before>2023-06</best-before>
+        <version>capsule</version>
+        <amount>30</amount>
+    </medicament>
+
+    <cosmetic id="B1">
+        <name>Chlorhexidine</name>
+        <pharm>Pharmland</pharm>
+        <country>Belarus</country>
+        <age>teen</age>
+        <price>2</price>
+        <best-before>2022-11</best-before>
+        <application>body</application>
+        <volume>100</volume>
+    </cosmetic>
+
+    <cosmetic id="B2">
+        <name>Moisturising cream</name>
+        <pharm>Cerave</pharm>
+        <country>USA</country>
+        <age>adult</age>
+        <price>20</price>
+        <best-before>2023-11</best-before>
+        <application>face</application>
+        <volume>100</volume>
+    </cosmetic>
+
+    <cosmetic id="B3">
+        <name>Cold cream</name>
+        <pharm>Avene</pharm>
+        <country>France</country>
+        <age>middle-aged</age>
+        <price>50</price>
+        <best-before>2023-02</best-before>
+        <application>face</application>
+        <volume>30</volume>
+    </cosmetic>
+
+    <cosmetic id="B4">
+        <name>deodorant</name>
+        <pharm>La-Roche-Posay</pharm>
+        <country>France</country>
+        <age>adult</age>
+        <price>35</price>
+        <best-before>2023-05</best-before>
+        <application>body</application>
+        <volume>50</volume>
+    </cosmetic>
+
+    <cosmetic id="B5">
+        <name>lipstick</name>
+        <pharm>Carmex</pharm>
+        <country>USA</country>
+        <age>adult</age>
+        <price>20</price>
+        <best-before>2022-05</best-before>
+        <application>face</application>
+        <volume>10</volume>
+    </cosmetic>
+
+    <cosmetic id="B6">
+        <name>shampoo</name>
+        <pharm>Bionnex</pharm>
+        <country>Italy</country>
+        <age>adult</age>
+        <price>30</price>
+        <best-before>2022-12</best-before>
+        <application>hair</application>
+        <volume>300</volume>
+    </cosmetic>
+
+    <cosmetic id="B7">
+        <name>Shower gel</name>
+        <pharm>Bioderma</pharm>
+        <country>France</country>
+        <age>adult</age>
+        <price>40</price>
+        <best-before>2023-01</best-before>
+        <application>body</application>
+        <volume>250</volume>
+    </cosmetic>
+
+    <cosmetic id="B8">
+        <name>Sun cream 50+</name>
+        <pharm>RILASTIL</pharm>
+        <country>Italy</country>
+        <age>adult</age>
+        <price>40</price>
+        <best-before>2023-03</best-before>
+        <application>body</application>
+        <volume>250</volume>
+    </cosmetic>
+</medicins>

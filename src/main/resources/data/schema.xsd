@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.pharmacy.com/medicins"
+        xmlns:tns="http://www.pharmacy.com/medicins"
+        elementFormDefault="qualified">
+    <element name="medicins">
+        <complexType>
+            <sequence>
+                <element name="medicin" type="tns:medicin" />
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="medicin">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="pharm" type="string"/>
+            <element name="country" type="string"/>
+            <element name="age" type="tns:age"/>
+            <element name="price" type="positiveInteger"/>
+            <element name="best-before" type="gYearMonth"/>
+        </sequence>
+        <attribute name="id" type="tns:medicinId" use="required"/>
+        <attribute name="analog" use="optional" default="no analog"/>
+    </complexType>
+
+    <complexType name="cosmetic">
+        <complexContent>
+            <extension base="tns:medicin">
+                <sequence>
+                    <element name="application" type="tns:applicationCosmetic"/>
+                    <element name="volume" type="positiveInteger"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="medicament">
+        <complexContent>
+            <extension base="tns:medicin">
+                <sequence>
+                    <element name="version" type="tns:versionMedicament"/>
+                    <element name="amount" type="positiveInteger"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <element name="medicin" type="tns:medicin" abstract="true"/>
+    <element name="medicament" type="tns:medicament" substitutionGroup="tns:medicin"/>
+    <element name="cosmetic" type="tns:cosmetic" substitutionGroup="tns:medicin"/>
+
+    <simpleType name="medicinId">
+        <restriction base="ID">
+            <pattern value="\w{1,}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="age">
+        <restriction base="string">
+            <enumeration value="baby" />
+            <enumeration value="child" />
+            <enumeration value="teen" />
+            <enumeration value="adult" />
+            <enumeration value="middle-aged" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="versionMedicament">
+        <restriction base="string">
+            <enumeration value="tablet" />
+            <enumeration value="capsule" />
+            <enumeration value="spray" />
+            <enumeration value="powder" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="applicationCosmetic">
+        <restriction base="string">
+            <enumeration value="face" />
+            <enumeration value="body" />
+            <enumeration value="hair" />
+        </restriction>
+    </simpleType>
+</schema>
